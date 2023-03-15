@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "mfe-root",
+  "version": "0.1.0",
+  "description": "Micro frontend entry point router",
+  "repository": "https://github.com/gautierrollin/mfe-root",
+  "author": "Gautier Rollin <contact@gautierrollin.com> (https://gautierrollin.com)",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.15.0",
+    "npm": ">=9.5.0"
+  },
+  "scripts": {
+    "build": "webpack build",
+    "start": "webpack serve"
+  },
+  "devDependencies": {
+    "@babel/parser": "~7.21.3",
+    "@babel/plugin-transform-runtime": "~7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "~9.1.2",
+    "html-webpack-plugin": "~5.5.0",
+    "webpack": "~5.76.1",
+    "webpack-cli": "~5.0.1",
+    "webpack-dev-server": "~4.12.0"
+  },
+  "dependencies": {
+    "core-js": "~3.29.1",
+    "single-spa": "^5.9.4",
+    "single-spa-layout": "~2.1.0"
+  }
+}

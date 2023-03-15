@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html translate="no">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Micro Frontend</title>
+    <% for (remoteEntry of htmlWebpackPlugin.options.remoteEntries) { %>
+    <script src="<%= remoteEntry %>"></script>
+    <% } %>
+  </head>
+  <body>
+  </body>
+</html>
