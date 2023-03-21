@@ -1,6 +1,5 @@
 const path = require("path");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
-const MinChunkSizePlugin = require("webpack/lib/optimize/MinChunkSizePlugin");
 const pckg = require("./package.json");
 
 
@@ -40,10 +39,6 @@ module.exports = {
   },
 
   plugins : [
-    new MinChunkSizePlugin({
-      // Minimum number of characters (about ~10 ko)
-      minChunkSize : 10000
-    }),
     new ModuleFederationPlugin({
       name : "mfeHeader",
       library : {
