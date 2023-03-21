@@ -58,7 +58,7 @@ module.exports = {
           requiredVersion : pckg.dependencies.react,
           singleton : true
         },
-        "react-dom" : {
+        "react-dom/client" : {
           // Avoid "Unsatisfied version x.x.x of shared singleton module" warning in browser console
           // See https://stackoverflow.com/a/66298310
           requiredVersion : pckg.dependencies["react-dom"],
